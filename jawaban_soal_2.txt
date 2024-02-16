@@ -1,0 +1,3 @@
+Apa itu git rebase?
+
+Git rebase adalah perintah di Git yang memungkinkan pengguna untuk memodifikasi basis cabang menjadi commit. Untuk bekerja dengan "git rebase" perintah, pertama, buka repositori lokal Git dan daftarkan semua cabang. Kemudian, jalankan "pembayaran git". Terakhir, jalankan "git rebase" dan tambahkan nama cabang. 

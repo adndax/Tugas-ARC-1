@@ -1,0 +1,16 @@
+Apa itu merge conflict dan cara menanggulanginya?
+
+Merge-conflict merupakan sebuah kasus di mana terdapat pertentangan (conflict) ketika proses integrasi (merge) antara dua source berbeda. Proses integrasi (merge) yang dimaksud bukan hanya melibatkan perubahan antar branch saja, melainkan selama perintah yang dieksekusi dapat men-trigger proses integrasi maka conflict dapat terjadi, misalnya sebagai berikut.
+1. Mengembalikan perubahan yang disimpan di git stash.
+2. Mengambil perubahan dari remote branch dengan perintah git pull.
+3. Menjalankan perintah git merge untuk menyatukan perubahan ke branch master.
+4. Menjalankan perintah git rebase untuk mengintegrasikan perubahan pada current branch dengan branch master.
+5. Memilih beberapa commit untuk dipindahkan ke branch lain dengan perintah git cherry-pick.
+
+Cara menanggulangi merge-conflict:
+1. Always keep branch sync with the main branch
+Selalu rebase perubahan dari branch utama (main/master) ke branch yang sedang digunakan sebelum menambahkan perubahan yang baru.
+2. Do pull before push
+Lakukan pull sebelum push pada branch origin untuk memastikan bahwa tidak ada lagi perubahan yang tertinggal sebelum menambahkan perubahan yang baru.
+3. Keep the changes smaller as possible
+Semakin kecil perubahan yang dibuat, semakin kecil pula area yang berpotensi contradictory sehingga dapat meminimalisasi kemungkinan terjadinya conflict. Hal ini juga akan mempermudah kita dalam me-resolve area conflict karena cakupannya yang kecil.
